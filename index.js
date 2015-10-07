@@ -36,10 +36,6 @@ module.exports = function clip (boundary, toClip, options) {
     return null
   }
 
-  if (isInside(toClip, boundary)) {
-    return toClip
-  }
-
   if (isInside(boundary, toClip)) {
     return {
       type: 'Feature',
